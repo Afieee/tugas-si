@@ -10,9 +10,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/sekretariat/test',[MatakuliahController::class,'viewMatakuliah']);
+Route::get('/sekretariat/test', [MatakuliahController::class, 'viewMatakuliah']);
 
-Route::resource('sekretariat',MatakuliahController::class);
+Route::resource('sekretariat', MatakuliahController::class);
 
 
 // Route::get('/sekretariat/view-matakuliah', 'SekretariatController@viewMatakuliah')->name('view-matakuliah');
